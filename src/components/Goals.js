@@ -39,6 +39,6 @@ class Goals extends React.Component {
 }
 
 /*This will be our default export so that whenever we import Goals Module, what we will get back is our ConnectedGoals Component coming from the connect function in ReactRedux*/
-export default ConnectedGoals = connect((state) => ({
+export default connect((state) => ({
     goals: state.goals
 }))(Goals)

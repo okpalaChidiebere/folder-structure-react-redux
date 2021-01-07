@@ -71,6 +71,6 @@ class Todos extends React.Component {
 }
 
 /*This will be our default export so that whenever we import Todos Module, what we will get back is our ConnectedTodos Component coming from the connect function in ReactRedux*/
-export default ConnectedTodos = connect((state) => ({
+export default connect((state) => ({
     todos: state.todos
 }))(Todos)
